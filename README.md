@@ -26,6 +26,10 @@ This project simply includes the minimal set of .jar files necessary to read a
 neo4j 2.2.1 db and export it in Graphviz dot. The code is JavaScript, using the
 [NodeJS Java Bridge API](https://www.npmjs.com/package/java).
 
+## Dependencies
+- [NodeJS](https://nodejs.org)
+    - [Java Bridge API](js.com/package/java)
+    - [Yargs](https://www.npmjs.com/package/yargs)
 
 ## Command-line interface
 

@@ -1,14 +1,4 @@
 "use strict";
-var os = process.platform;
-if (os === "darwin") {
-    module.paths.push("/opt/local/lib/node_modules");
-}
-if (os === "linux") {
-    module.paths.push("/usr/lib/node_modules");
-}
-if (os === "win32") {
-    module.paths.push("C:/Program Files (x86)/nodejs/node_modules");
-}
 var fs = require("fs");
 var java = require("java");
 var argv = require('yargs').argv;
@@ -20,7 +10,6 @@ java.classpath.push("lib/neo4j-io-2.2.1.jar");
 java.classpath.push("lib/neo4j-graphviz-2.2.1.jar");
 java.classpath.push("lib/neo4j-unsafe-2.2.1.jar");
 
-argv._[0] = "/Users/arussel7/Projects/neo4j-community-2.2.1/data/graph.db";
 if (argv.help) {
     console.log("Neo4j graphviz generator. Prints graphviz dot notation representing the full neo4j db to stdout.");
     console.log("USAGE: " + argv.$0 + " neo4j/store/dir");
