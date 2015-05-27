@@ -1,0 +1,21 @@
+{
+    "name": "node-neo4j-graphviz",
+    "description": "",
+    "version": "0.0.1",
+    "main": "./node-neo4j-graphviz.js",
+    "author": {
+        "name": "Adam Russell",
+        "email": "ac.russell@live.com"
+    },
+    "keywords": [],
+    "licenses": {
+        "type": "none"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/adamcrussell/node-neo4j-graphviz.git"
+    },
+    "bugs": {
+        "url": "http://github.com/adamcrussell/node-neo4j-graphviz/issues"
+    }
+}
